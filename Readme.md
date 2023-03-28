@@ -1,7 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Kirill Shulgin](https://up.htmlacademy.ru/adaptive/28/user/2214347).
-* Наставник: `Неизвестно`.
+* Наставник: [Andrey Efimov](https://htmlacademy.ru/profile/efiand).
 
 ---
 
