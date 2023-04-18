@@ -1,0 +1,17 @@
+@mixin list-resert {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+@mixin text-settings(
+  $size: 15px,
+  $weight: 400,
+  $height: 30px,
+  $color: $base-color
+) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  color: $color;
+}

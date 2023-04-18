@@ -1,0 +1,12 @@
+.range-link {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+  @include text-settings(19px, 700, 24px, $white-color);
+  text-decoration: none;
+
+  /* Оформление */
+  background-color: $green-color;
+}

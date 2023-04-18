@@ -1,0 +1,15 @@
+.nav-link {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+  @include text-settings(17px, 700, 24px, $black-color);
+  text-decoration: none;
+
+  /* Оформление */
+
+  &--font-size {
+    font-size: 15px;
+  }
+}

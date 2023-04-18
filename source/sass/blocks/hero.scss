@@ -1,0 +1,54 @@
+.hero {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.hero__wrapper {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+
+  /* Оформление */
+
+  &--background-color {
+    /* Позиционирование */
+
+    /* Блочная модель */
+
+    /* Типографика */
+
+    /* Оформление */
+    background-color: $grey-color;
+  }
+
+  &--background-image {
+    /* Позиционирование */
+
+    /* Блочная модель */
+
+    /* Типографика */
+
+    /* Оформление */
+    background-image: url("../img/header_background.jpg");
+    // background-image: url("/source/img/header_background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__title {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+
+  /* Оформление */
+}

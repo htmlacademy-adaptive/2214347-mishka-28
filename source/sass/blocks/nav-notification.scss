@@ -1,0 +1,14 @@
+.nav-notification {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+  @include text-settings(15px, 400, 24px, $base-color);
+
+  /* Оформление */
+
+  // &--hidden {
+  //   display: none;
+  // }
+}
