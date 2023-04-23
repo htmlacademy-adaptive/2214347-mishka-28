@@ -1,21 +1,14 @@
 .contacts {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
   /* Типографика */
 
   /* Оформление */
-
-  &--icon-flag {
-    // иконка
-  }
 }
 
 .contacts__wrapper {
   /* Позиционирование */
 
   /* Блочная модель */
+  margin: 0 30px;
 
   /* Типографика */
 
@@ -38,7 +31,7 @@
   /* Блочная модель */
 
   /* Типографика */
-  @include text-settings(14px, 400, 30px, $base-color);
+  font-size: 14px;
 
   /* Оформление */
 }
@@ -47,7 +40,7 @@
   /* Позиционирование */
 
   /* Блочная модель */
-  @include list-resert;
+  list-style-type: none;
 
   /* Типографика */
 
@@ -80,7 +73,8 @@
   /* Блочная модель */
 
   /* Типографика */
-  @include text-settings(14px, 400, 30px, $base-color);
+  font-size: 14px;
+  color: $base-color;
 
   /* Оформление */
   text-decoration: none;

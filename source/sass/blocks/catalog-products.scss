@@ -1,8 +1,4 @@
 .catalog-products {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
   /* Типографика */
 
   /* Оформление */
@@ -12,6 +8,7 @@
   /* Позиционирование */
 
   /* Блочная модель */
+  margin: 30px;
 
   /* Типографика */
 
@@ -22,7 +19,9 @@
   /* Позиционирование */
 
   /* Блочная модель */
-  @include list-resert;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   /* Типографика */
 
@@ -76,7 +75,10 @@
   /* Блочная модель */
 
   /* Типографика */
-  @include text-settings(17px, 700, 24px, $black-color);
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black-color;
 
   /* Оформление */
 }
@@ -98,7 +100,9 @@
   /* Блочная модель */
 
   /* Типографика */
-  @include text-settings(15px, 700, 24px, $black-color);
+  line-height: 24px;
+  font-weight: 700;
+  color: $black-color;
 
   /* Оформление */
 }

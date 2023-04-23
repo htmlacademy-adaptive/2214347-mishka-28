@@ -1,10 +1,9 @@
 .user-list {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
   /* Типографика */
-  @include text-settings(17px, 700, 24px, $black-color);
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black-color;
 
   /* Оформление */
 }

@@ -1,73 +1,92 @@
-.popular-products {
+.choose-form {
   /* Типографика */
 
   /* Оформление */
 }
 
-.popular-products__wrapper {
+.choose-form__group {
   /* Позиционирование */
 
   /* Блочная модель */
-  margin: 0 30px;
 
   /* Типографика */
 
   /* Оформление */
 }
 
-.popular-products__title {
+.choose-form__title {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.choose-form__list {
+  /* Позиционирование */
+
+  /* Блочная модель */
+  list-style-type: none;
+
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.choose-form__item {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.choose-form__item-toggle {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.choose-form__item-label {
   /* Позиционирование */
 
   /* Блочная модель */
 
   /* Типографика */
   font-size: 17px;
-  line-height: 20px;
+  line-height: 16px;
   font-weight: 700;
-  color: $green-color;
+  text-transform: uppercase;
 
   /* Оформление */
+  background-color: $white-color;
+  border: 2px solid rgba($color: $base-color, $alpha: 0.1);
+  cursor: pointer;
 }
 
-.popular-products__list {
+.choose-form__button {
   /* Позиционирование */
 
   /* Блочная модель */
-  list-style-type: none;
-  padding: 0;
+  box-sizing: border-box;
 
   /* Типографика */
+  font-size: 17px;
+  line-height: 16px;
+  font-weight: 700;
+  color: $white-color;
+  text-transform: uppercase;
 
   /* Оформление */
-}
-
-.popular-products__item {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
-  /* Типографика */
-
-  /* Оформление */
-}
-
-.popular-products__item-title {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
-  /* Типографика */
-
-  /* Оформление */
-}
-
-.popular-products__item-description {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
-  /* Типографика */
-  line-height: 24px;
-
-  /* Оформление */
+  background-color: $green-color;
+  border: none;
+  cursor: pointer;
 }

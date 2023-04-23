@@ -1,10 +1,9 @@
 .range-link {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
   /* Типографика */
-  @include text-settings(19px, 700, 24px, $white-color);
+  font-size: 19px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $white-color;
   text-decoration: none;
 
   /* Оформление */

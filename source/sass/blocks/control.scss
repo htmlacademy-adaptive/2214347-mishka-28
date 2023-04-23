@@ -1,4 +1,10 @@
 .control {
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.control__toggle {
   /* Позиционирование */
 
   /* Блочная модель */
@@ -14,7 +20,10 @@
   /* Блочная модель */
 
   /* Типографика */
-  @include text-settings(17px, 700, 18px, $black-color);
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 700;
+  color: $black-color;
 
   /* Оформление */
 }

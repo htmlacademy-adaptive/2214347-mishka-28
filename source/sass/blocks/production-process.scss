@@ -1,8 +1,4 @@
 .production-process {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
   /* Типографика */
 
   /* Оформление */
@@ -12,6 +8,8 @@
   /* Позиционирование */
 
   /* Блочная модель */
+  margin: 0 30px;
+  padding: 21.5px 0 33px 0;
 
   /* Типографика */
 
@@ -24,7 +22,10 @@
   /* Блочная модель */
 
   /* Типографика */
-  @include text-settings(17px, 700, 24px, $black-color);
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $black-color;
 
   /* Оформление */
 
@@ -55,7 +56,8 @@
   /* Блочная модель */
 
   /* Типографика */
-  @include text-settings(13px, 400, 24px, $base-color);
+  font-size: 13px;
+  line-height: 24px;
 
   /* Оформление */
 }

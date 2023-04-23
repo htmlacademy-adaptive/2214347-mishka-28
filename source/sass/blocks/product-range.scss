@@ -1,8 +1,4 @@
 .product-range {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
   /* Типографика */
 
   /* Оформление */
@@ -12,17 +8,21 @@
   /* Позиционирование */
 
   /* Блочная модель */
+  padding: 0 30px;
 
   /* Типографика */
 
   /* Оформление */
+  background-color: $green-color;
 }
 
 .product-range__list {
   /* Позиционирование */
 
   /* Блочная модель */
-  @include list-resert;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 
   /* Типографика */
 

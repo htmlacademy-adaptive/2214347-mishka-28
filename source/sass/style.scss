@@ -1,10 +1,10 @@
-// переменные и миксины
-@import "./variables.scss";
-@import "./mixins.scss";
+// переменные
+@import "base/variables.scss";
 
 // базовые свойства
-@import "./base/fonts.scss";
-// @import "./base/visually-hidden.scss";
+@import "base/fonts.scss";
+@import "base/global.scss";
+// @import "base/visually-hidden.scss";
 
 // блоки компонентов
 @import "blocks/page.scss";
@@ -15,7 +15,6 @@
 @import "blocks/nav-link.scss";
 @import "blocks/user-list.scss";
 @import "blocks/news-list.scss";
-@import "blocks/nav-notification.scss";
 @import "blocks/main-container.scss";
 @import "blocks/hero.scss";
 @import "blocks/title-main.scss";
@@ -36,13 +35,10 @@
 @import "blocks/social.scss";
 @import "blocks/copyright.scss";
 @import "blocks/modal.scss";
-@import "blocks/modal-content.scss";
-@import "blocks/modal-form.scss";
-@import "blocks/button-modal.scss";
+@import "blocks/choose-form.scss";
 @import "blocks/catalog-products.scss";
 @import "blocks/production-process.scss";
 @import "blocks/form.scss";
 @import "blocks/form-filters.scss";
 @import "blocks/control.scss";
-@import "blocks/control-toggle.scss";
 @import "blocks/control-field.scss";

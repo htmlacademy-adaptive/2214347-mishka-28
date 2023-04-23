@@ -1,8 +1,4 @@
 .hero {
-  /* Позиционирование */
-
-  /* Блочная модель */
-
   /* Типографика */
 
   /* Оформление */
@@ -12,23 +8,15 @@
   /* Позиционирование */
 
   /* Блочная модель */
+  margin: 0;
+  padding: 96.5px 0;
 
   /* Типографика */
 
   /* Оформление */
+  background-color: $grey-color;
 
-  &--background-color {
-    /* Позиционирование */
-
-    /* Блочная модель */
-
-    /* Типографика */
-
-    /* Оформление */
-    background-color: $grey-color;
-  }
-
-  &--background-image {
+  &--main {
     /* Позиционирование */
 
     /* Блочная модель */
@@ -37,7 +25,6 @@
 
     /* Оформление */
     background-image: url("../img/header_background.jpg");
-    // background-image: url("/source/img/header_background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
   }
