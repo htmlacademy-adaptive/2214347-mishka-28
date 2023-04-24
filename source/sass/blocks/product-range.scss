@@ -1,0 +1,48 @@
+.product-range {
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.product-range__wrapper {
+  /* Позиционирование */
+
+  /* Блочная модель */
+  padding: 0 30px;
+
+  /* Типографика */
+
+  /* Оформление */
+  background-color: $green-color;
+}
+
+.product-range__list {
+  /* Позиционирование */
+
+  /* Блочная модель */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  /* Типографика */
+
+  /* Оформление */
+}
+
+.product-range__item {
+  /* Позиционирование */
+
+  /* Блочная модель */
+
+  /* Типографика */
+
+  /* Оформление */
+
+  &--interior-accessories {
+    // иконка
+  }
+
+  &--baby-toys {
+    // иконка
+  }
+}

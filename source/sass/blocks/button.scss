@@ -1,0 +1,18 @@
+.button {
+  /* Позиционирование */
+
+  /* Блочная модель */
+  box-sizing: border-box;
+
+  /* Типографика */
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: 700;
+  color: $base-color;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  /* Оформление */
+  background-color: $white-color;
+  border: 2px solid currentColor;
+}
