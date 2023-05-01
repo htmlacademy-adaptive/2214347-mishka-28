@@ -1,73 +1,303 @@
 .popular-products {
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
 }
 
 .popular-products__wrapper {
-  /* Позиционирование */
+  // Позиционирование
+  position: relative;
 
-  /* Блочная модель */
-  margin: 0 30px;
+  // Блочная модель
+  margin: 31px 30px 31px;
+  padding-bottom: 42px;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 31px 50px 55.5px;
+    padding-bottom: 69px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 31px 50px 96px;
+    padding-bottom: 68px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .popular-products__title {
-  /* Позиционирование */
+  // Позиционирование
+  position: absolute;
+  top: 33.5px;
 
-  /* Блочная модель */
+  // Блочная модель
+  margin: 0 auto 0 0;
 
-  /* Типографика */
+  // Типографика
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
   color: $green-color;
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+    top: 8px;
+    right: 13px;
+
+    // Блочная модель
+
+    // Типографика
+    line-height: 17px;
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+    top: 69px;
+    right: 87.42%;
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .popular-products__list {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-left: 175px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .popular-products__item {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  display: grid;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    display: grid;
+    grid-template-columns: 292px 1fr;
+    grid-template-rows: repeat(5, min-content);
+    column-gap: 42px;
+    min-height: 404px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .popular-products__item-title {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin: 0;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .popular-products__item-description {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin: 41px 0 0;
 
-  /* Типографика */
+  // Типографика
   line-height: 24px;
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-column: 1/2;
+
+    // Типографика
+    font-size: 17px;
+    line-height: 30px;
+
+    // Оформление
+  }
+}
+
+.popular-products__item-characteristics {
+  // Позиционирование
+
+  // Блочная модель
+  margin: 48px 0 0;
+
+  // Типографика
+
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+
+    // Типографика
+
+    // Оформление
+  }
+}
+
+.popular-products__item-link {
+  // Позиционирование
+
+  // Блочная модель
+  margin: 28px 0 0;
+
+  // Типографика
+
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-row: 2/6;
+    grid-column: 2/3;
+
+    // Типографика
+
+    // Оформление
+  }
+}
+
+.popular-products__item-price {
+  // Позиционирование
+
+  // Блочная модель
+  display: block;
+  justify-self: center;
+  margin: 25.5px 0 0;
+
+  // Типографика
+
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 57px 0 0;
+
+    // Типографика
+
+    // Оформление
+  }
+}
+
+.popular-products__item-button {
+  // Позиционирование
+
+  // Блочная модель
+  margin: 24.5px 0 0;
+
+  // Типографика
+
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 33px 0 0;
+
+    // Типографика
+
+    // Оформление
+  }
 }

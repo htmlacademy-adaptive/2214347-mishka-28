@@ -1,19 +1,26 @@
 .site-list {
-  /* Типографика */
+  // Типографика
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $black-color;
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    // Типографика
+    font-size: 15px;
+
+    // Оформление
+  }
 }
 
 .site-list__item {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
 }

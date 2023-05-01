@@ -1,8 +1,24 @@
 .title-section {
-  /* Типографика */
+  // Типографика
   font-size: 25px;
   font-weight: 700;
   color: $black-color;
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Типографика
+    font-size: 43px;
+    line-height: 50px;
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Типографика
+    font-size: 53px;
+    line-height: 57px;
+
+    // Оформление
+  }
 }

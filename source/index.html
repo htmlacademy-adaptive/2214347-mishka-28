@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,46 +22,46 @@
 
       <div class="main-nav__wrapper main-nav__wrapper--hidden">
 
-        <ul class="main-nav__list site-list">
+        <ul class="main-nav__list main-nav__list-site site-list">
           <li class="site-list__item">
-            <a class="nav-link" href="catalog.html">
+            <a class="main-nav__link" href="catalog.html">
               Каталог товаров
             </a>
           </li>
           <li class="site-list__item">
-            <a class="nav-link" href="form.html">
+            <a class="main-nav__link" href="form.html">
               Вязание на заказ
             </a>
           </li>
         </ul>
 
-        <ul class="main-nav__list user-list">
+        <ul class="main-nav__list main-nav__list-user user-list">
           <li class="user-list__item">
-            <a class="nav-link" href="#!">
+            <a class="main-nav__link" href="#!">
               Поиск по сайту
             </a>
           </li>
           <li class="user-list__item">
-            <a class="nav-link" href="#!">
+            <a class="main-nav__link" href="#!">
               Корзина: пока пуста
             </a>
           </li>
         </ul>
 
-        <ul class="main-nav__list news-list news-list--hidden">
+        <ul class="main-nav__list main-nav__list-news news-list">
           <li class="news-list__item">
-            <a class="nav-link nav-link--additional" href="#!">
+            <a class="main-nav__link main-nav__link--additional" href="#!">
               Новые поступления
             </a>
           </li>
           <li class="news-list__item">
-            <a class="nav-link nav-link--additional" href="#!">
+            <a class="main-nav__link main-nav__link--additional" href="#!">
               Распродажа
             </a>
           </li>
         </ul>
 
-        <p class="main-nav__notification main-nav__notification--hidden">Бесплатная доставка по России</p>
+        <p class="main-nav__notification">Бесплатная доставка по России</p>
       </div>
     </nav>
   </header>
@@ -77,10 +78,10 @@
         <h2 class="visually-hidden">Ассортимент продукции</h2>
         <ul class="product-range__list">
           <li class="product-range__item product-range__item--interior-accessories">
-            <a class="product-range__link range-link" href="#!" >Предметы интерьера</a>
+            <a class="product-range__link range-link" href="#!" >Предметы <br>интерьера</a>
           </li>
           <li class="product-range__item product-range__item--baby-toys">
-            <a class="product-range__link range-link" href="#!" >Детские игрушки</a>
+            <a class="product-range__link range-link" href="#!" >Детские <br>игрушки</a>
           </li>
         </ul>
       </div>
@@ -96,7 +97,7 @@
               Экологически чистая пряжа,
               ручная работа. Доступны в шести расцветках и трёх размерах.
             </p>
-            <dl class="product-characteristics">
+            <dl class="popular-products__item-characteristics product-characteristics">
               <div class="product-characteristics__item">
                 <dt class="product-characteristics__name">
                   Цвет
@@ -122,11 +123,11 @@
                 </dd>
               </div>
             </dl>
-            <a class="product-link" href="#!">
-              <img class="product-link__image" src="img/weekly_product.jpg" width="260" height="315" alt="Вязаные корзинки.">
+            <a class="popular-products__item-link product-link" href="#!">
+              <img class="product-link__image" src="img/weekly-product.jpg" width="260" height="315" alt="Вязаные корзинки.">
             </a>
-            <b class="product-price">Цена: 990 руб.</b>
-            <a class="button" href="#!">Заказать</a>
+            <b class="popular-products__item-price product-price">Цена: 990 руб.</b>
+            <a class="popular-products__item-button button" href="#!">Заказать</a>
           </li>
         </ul>
       </div>
@@ -180,7 +181,7 @@
               <span class="review__author-email">@misssssiskras</span>
             </cite>
           </blockquote>
-          <blockquote class="slider__item review review--hidden">
+          <blockquote class="slider__item slider__item--hidden review">
             <p class="review__text">
               Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у
               популярных инстамамочек. В отчаянии, я накупила аксессуаров
@@ -192,7 +193,7 @@
               <span class="review__author-email">@misssssiskras2</span>
             </cite>
           </blockquote>
-          <blockquote class="slider__item review review--hidden">
+          <blockquote class="slider__item slider__item--hidden review">
             <p class="review__text">
               Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков,
               как у популярных инстамамочек. В отчаянии, я накупила аксессуаров
@@ -205,14 +206,14 @@
             </cite>
           </blockquote>
         </div>
-        <p class="toggles">
+        <p class="feedback__toggles toggles">
           <button class="toggles__previous" type="button">
             <span class="visually-hidden">Предыдущий отзыв</span>
           </button>
           <button class="toggles__next" type="button">
             <span class="visually-hidden">Следующий отзыв</span>
           </button>
-          <a class="button" href="#!">Написать</a>
+          <a class="toggles__main button" href="#!">Написать</a>
         </p>
       </div>
     </section>
@@ -238,7 +239,8 @@
             </dd>
           </dl>
         </address>
-        <a class="button" href="#!">Напишите нам</a>
+        <img src="img/map.jpg" alt="Карта">
+        <a class="contacts__button button" href="#!">Напишите нам</a>
       </div>
     </section>
   </main>
@@ -278,7 +280,7 @@
 
   <div class="modal">
     <section class="modal__wrapper">
-      <h2 class="modal__title title-section">Добавить в корзину</h2>
+      <h2 class="modal__title">Добавить в корзину</h2>
       <form class="choose-form" action="https://echo.htmlacademy.ru/" method="post">
         <fieldset class="choose-form__group">
           <legend class="choose-form__title">Выберите размер:</legend>

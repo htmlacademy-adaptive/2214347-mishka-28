@@ -1,10 +1,14 @@
 .button {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
   box-sizing: border-box;
+  display: inline-block;
+  padding: 16px 0;
+  text-align: center;
+  min-width: 260px;
 
-  /* Типографика */
+  // Типографика
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
@@ -12,7 +16,29 @@
   text-decoration: none;
   text-transform: uppercase;
 
-  /* Оформление */
+  // Оформление
   background-color: $white-color;
   border: 2px solid currentColor;
+
+  &--big {
+    // Позиционирование
+
+    // Блочная модель
+    padding: 18px 0;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  &--narrow {
+    // Позиционирование
+
+    // Блочная модель
+    min-width: 192px;
+
+    // Типографика
+
+    // Оформление
+  }
 }

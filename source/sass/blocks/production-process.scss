@@ -1,63 +1,178 @@
 .production-process {
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
 }
 
 .production-process__wrapper {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  display: grid;
+  justify-items: center;
   margin: 0 30px;
-  padding: 21.5px 0 33px 0;
+  padding: 21.5px 0 33px;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 0 50px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-template-columns: 1fr 287px;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 80px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .production-process__title {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin: 0 0 26.5px;
+  padding-left: 91px;
 
-  /* Типографика */
+  // Типографика
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $black-color;
 
-  /* Оформление */
+  // Оформление
 
   &--videocamera {
-    /* Позиционирование */
+    // Позиционирование
 
-    /* Блочная модель */
+    // Блочная модель
 
-    /* Типографика */
+    // Типографика
 
-    /* Оформление */
+    // Оформление
+  }
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-row: 2/3;
+    margin-bottom: 24.5px;
+    justify-self: left;
+    padding-left: 107px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-row: 1/2;
+    padding: 96px 0 0;
+    margin: 0;
+
+    // Типографика
+
+    // Оформление
   }
 }
 
 .production-process__image {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin-bottom: 35px;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-bottom: 41px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-row: 1/-1;
+    grid-column: 1/2;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .production-process__description {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin: 0 0 41px;
 
-  /* Типографика */
+  // Типографика
   font-size: 13px;
   line-height: 24px;
 
-  /* Оформление */
+  // Оформление
+
+  @media (min-width: $tablet-width) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-bottom: 40.5px;
+    padding-left: 40px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media (min-width: $desktop-width) {
+    // Позиционирование
+
+    // Блочная модель
+    padding: 27.5px 0 51.5px;
+    margin: 0;
+
+    // Типографика
+
+    // Оформление
+  }
+}
+
+.production-process__button {
+  // Позиционирование
+
+  // Блочная модель
+  display: block;
+
+  // Типографика
+
+  // Оформление
 }
