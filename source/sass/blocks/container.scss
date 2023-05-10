@@ -1,0 +1,21 @@
+.container {
+  // Блочная модель (внутрення геометрия)
+  // padding-left: calc(50% - 130px);
+  // padding-right: calc(50% - 130px);
+  padding-left: 30px;
+  padding-right: 30px;
+
+  @media ($tablet) {
+    // Блочная модель (внутрення геометрия)
+    // padding-left: calc(50% - 334px);
+    // padding-right: calc(50% - 334px);
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media ($desktop) {
+    // Блочная модель (внутрення геометрия)
+    padding-left: calc(50% - 525px);
+    padding-right: calc(50% - 525px);
+  }
+}

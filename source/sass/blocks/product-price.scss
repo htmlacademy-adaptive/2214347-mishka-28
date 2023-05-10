@@ -1,10 +1,31 @@
 .product-price {
-  /* Позиционирование */
+  // Типографика
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $base-color;
 
-  /* Блочная модель */
+  // Оформление
 
-  /* Типографика */
-  @include text-settings(17px, 700, 24px, $base-color);
+  @media ($tablet) {
+    // Типографика
+    font-size: 20px;
 
-  /* Оформление */
+    // Оформление
+  }
+
+  &--additional {
+    // Типографика
+    font-size: 15px;
+    color: $black-color;
+
+    // Оформление
+
+    @media ($tablet) {
+      // Типографика
+      font-size: 17px;
+
+      // Оформление
+    }
+  }
 }

@@ -1,14 +1,18 @@
 .nav-link {
-  /* Типографика */
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
+  // Блочная модель (внутреняя геометрия)
+  display: block;
+
+  // Типографика
   color: $black-color;
   text-decoration: none;
 
-  /* Оформление */
+  // Оформление
+  box-shadow: 0 1px 0 #ececec, inset 0 1px 0 #ececec;
 
   &--additional {
+    // Типографика
     font-size: 15px;
+
+    // Оформление
   }
 }

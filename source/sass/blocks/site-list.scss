@@ -1,19 +1,77 @@
 .site-list {
-  /* Типографика */
+  // Блочная модель (внутренняя геометрия)
+
+  // Типографика
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $black-color;
 
-  /* Оформление */
+  // Оформление
+
+  @media ($tablet) and ($desktop) {
+    // Типографика
+    font-size: 15px;
+
+    // Оформление
+  }
+
+  @media ($tablet) {
+    // Блочная модель (внутренняя геометрия)
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+  }
 }
 
 .site-list__item {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+}
+
+.site-list__link {
+  // Позиционирование
+
+  // Блочная модель
+  padding: 28.5px 32px 26.5px 46px;
+
+  // Типографика
+
+  // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    padding: 20.5px 37px;
+    padding-left: 0;
+
+    // Типографика
+    font-size: 15px;
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    padding: 32px 36px;
+
+    // Типографика
+    font-size: 17px;
+
+    // Оформление
+  }
+}
+
+.site-list__item:first-of-type .site-list__link {
+  @media ($desktop) {
+    padding-left: 0;
+  }
 }

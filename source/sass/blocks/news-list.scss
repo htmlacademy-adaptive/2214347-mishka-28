@@ -1,23 +1,54 @@
 .news-list {
-  /* Типографика */
+  // Типографика
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
   color: $black-color;
 
-  /* Оформление */
+  // Оформление
 
-  // &--hidden {
-  //   display: none;
-  // }
+  @media ($desktop) {
+    // Блочная модель (внутренняя геометрия)
+    display: flex;
+    flex-grow: 0;
+    flex-wrap: wrap;
+  }
 }
 
 .news-list__item {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+}
+
+.news-list__link {
+  // Позиционирование
+
+  // Блочная модель
+
+  // Типографика
+
+  // Оформление
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    padding: 20px 25px;
+    padding-left: 37px;
+
+    // Типографика
+
+    // Оформление
+  }
+}
+
+.news-list__item:first-of-type .news-list__link {
+  @media ($desktop) {
+    padding-left: 0;
+  }
 }

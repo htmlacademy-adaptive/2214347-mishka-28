@@ -1,8 +1,48 @@
 .title-section {
-  /* Типографика */
+  // Типографика
   font-size: 25px;
   font-weight: 700;
   color: $black-color;
 
-  /* Оформление */
+  // Оформление
+
+  @media ($tablet) {
+    // Типографика
+    font-size: 43px;
+    line-height: 50px;
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Типографика
+    font-size: 53px;
+    line-height: 57px;
+
+    // Оформление
+  }
+
+  &--main {
+    // Типографика
+    font-size: 27px;
+    text-align: center;
+
+    // Оформление
+
+    @media ($tablet) {
+      // Типографика
+      font-size: 43px;
+      line-height: 50px;
+
+      // Оформление
+    }
+
+    @media ($desktop) {
+      // Типографика
+      font-size: 53px;
+      line-height: 57px;
+
+      // Оформление
+    }
+  }
 }

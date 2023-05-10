@@ -1,0 +1,31 @@
+.wrapper {
+  // Блочная модель (внутренняя геометрия)
+
+  // Типографика
+
+  // Оформление
+
+  &--main {
+    // Оформление
+    background-image: url("../img/header_background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+
+    @media ($tablet) {
+      // Блочная модель (внутренняя геометрия)
+
+      // Типографика
+
+      // Оформление
+    }
+
+    @media ($desktop) {
+      // Блочная модель (внутренняя геометрия)
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+}

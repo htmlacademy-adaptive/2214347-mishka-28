@@ -1,17 +1,27 @@
-.choose-form {
+.product-description {
   // Блочная модель (внутренняя геометрия)
   display: grid;
+  row-gap: 40px;
+  padding: 27.5px 28px 26.5px;
 
   // Типографика
 
   // Оформление
 
   @media ($tablet) {
-    // Позиционирование
+    // Блочная модель (внутренняя геометрия)
+    row-gap: 195px;
+    padding: 27px 32px 26px 34px;
 
-    // Блочная модель
-    padding-left: 116px;
-    padding-right: 116px;
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Блочная модель (внутренняя геометрия)
+    row-gap: 60px;
+    padding: 27px 32px 26px 28px;
 
     // Типографика
 
@@ -19,112 +29,79 @@
   }
 }
 
-.choose-form__group {
+.product-description__content {
   // Позиционирование
 
   // Блочная модель
-  margin: 0 0 40px;
-  padding: 0;
 
   // Типографика
 
   // Оформление
-  border: none;
 }
 
-.choose-form__title {
+.product-description__link {
   // Позиционирование
 
   // Блочная модель
-  margin: 0 auto 35px;
 
   // Типографика
+  text-decoration: none;
 
   // Оформление
-
-  @media ($tablet) {
-    // Позиционирование
-
-    // Блочная модель
-    margin-bottom: 32px;
-
-    // Типографика
-    font-size: 17px;
-
-    // Оформление
-  }
 }
 
-.choose-form__list {
+.product-description__title {
   // Позиционирование
 
   // Блочная модель
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 7px;
-  list-style-type: none;
   margin: 0;
-  padding: 0;
-
-  // Типографика
-
-  // Оформление
-}
-
-.choose-form__item {
-  // Позиционирование
-
-  // Блочная модель
-
-  // Типографика
-
-  // Оформление
-}
-
-.choose-form__item-toggle {
-  // Позиционирование
-
-  // Блочная модель
-
-  // Типографика
-
-  // Оформление
-}
-
-.choose-form__item-label {
-  // Позиционирование
-
-  // Блочная модель
-  max-width: 82px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  // padding: 18px 45px;
 
   // Типографика
   font-size: 17px;
-  line-height: 16px;
+  line-height: 24px;
   font-weight: 700;
-  text-transform: uppercase;
+  color: $black-color;
 
   // Оформление
-  background-color: $white-color;
-  border: 2px solid rgba($color: $base-color, $alpha: 0.1);
-  cursor: pointer;
 }
 
-.choose-form__button {
+.product-description__properties {
   // Позиционирование
 
   // Блочная модель
 
   // Типографика
-  font-size: 17px;
-  line-height: 16px;
-  color: $white-color;
-  text-transform: uppercase;
+  font-size: 13px;
 
   // Оформление
-  background-color: $green-color;
-  border: none;
-  cursor: pointer;
+}
+
+.product-description__basket {
+  // Позиционирование
+
+  // Блочная модель
+
+  // Типографика
+
+  // Оформление
+}
+
+.product-description__price {
+  // Позиционирование
+
+  // Блочная модель
+
+  // Типографика
+
+  // Оформление
+}
+
+.product-description__button {
+  // Позиционирование
+
+  // Блочная модель
+
+  // Типографика
+
+  // Оформление
 }

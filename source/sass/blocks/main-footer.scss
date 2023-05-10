@@ -1,36 +1,95 @@
 .main-footer {
-  /* Типографика */
+  // Блочная модель (внутреняя геометрия)
+  display: grid;
+  justify-items: center;
+  padding-top: 25px;
+  padding-bottom: 32px;
 
-  /* Оформление */
+  // Типографика
+
+  // Оформление
+  background-color: $grey-color;
+
+  @media ($tablet) {
+    // Блочная модель (внутреняя геометрия)
+    grid-template-columns: min-content 1fr min-content;
+    // column-gap: 122px;
+    row-gap: 30px;
+    padding-top: 51px;
+    padding-bottom: 58px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Блочная модель (внутреняя геометрия)
+    // column-gap: 312px;
+    row-gap: 50px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .main-footer__logo {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  display: none;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    display: block;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .main-footer__social {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  display: grid;
+  grid-template-columns: repeat(3, min-content);
+  column-gap: 29px;
   list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 58px;
+  padding: 0;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 0;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .main-footer__copyright {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
 }

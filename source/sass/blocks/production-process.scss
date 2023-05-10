@@ -1,63 +1,189 @@
 .production-process {
-  /* Типографика */
+  // Блочная модель (внутренняя геометрия)
+  display: grid;
+  padding-top: 21.5px;
+  padding-bottom: 33px;
+  margin-bottom: 58px;
 
-  /* Оформление */
-}
+  // Оформление
 
-.production-process__wrapper {
-  /* Позиционирование */
+  @media ($tablet) {
+    // Блочная модель (внутренняя геометрия)
+    padding-top: 0;
+    padding-bottom: 46px;
+    margin-bottom: 64px;
 
-  /* Блочная модель */
-  margin: 0 30px;
-  padding: 21.5px 0 33px 0;
+    // Оформление
+  }
 
-  /* Типографика */
+  @media ($desktop) {
+    // Блочная модель (внутренняя геометрия)
+    grid-template-columns: 683px 1fr;
+    grid-template-rows: repeat(3, min-content);
+    column-gap: 80px;
+    padding-bottom: 0;
+    margin-bottom: 105px;
 
-  /* Оформление */
+    // Оформление
+  }
 }
 
 .production-process__title {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin-top: 0;
+  margin-bottom: 26.5px;
+  padding-left: 91px;
 
-  /* Типографика */
+  // Типографика
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
   color: $black-color;
 
-  /* Оформление */
+  // Оформление
 
-  &--videocamera {
-    /* Позиционирование */
+  @media ($tablet) {
+    // Позиционирование
 
-    /* Блочная модель */
+    // Блочная модель
+    grid-row: 2/3;
+    justify-self: left;
+    margin-bottom: 24.5px;
+    padding-left: 107px;
 
-    /* Типографика */
+    // Типографика
+    font-size: 20px;
 
-    /* Оформление */
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-row: 1/2;
+    margin-bottom: 27.5px;
+    padding-top: 97px;
+    padding-left: 0;
+    padding-right: 50px;
+
+    // Типографика
+
+    // Оформление
   }
 }
 
 .production-process__image {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin-bottom: 35px;
 
-  /* Типографика */
+  // Типографика
 
-  /* Оформление */
+  // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-bottom: 41px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-row: 1/-1;
+    grid-column: 1/2;
+    margin-right: 79px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .production-process__description {
-  /* Позиционирование */
+  // Позиционирование
 
-  /* Блочная модель */
+  // Блочная модель
+  margin-top: 0;
+  margin-bottom: 41px;
+  padding-left: 34px;
 
-  /* Типографика */
+  // Типографика
   font-size: 13px;
   line-height: 24px;
 
-  /* Оформление */
+  // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-bottom: 40.5px;
+    padding-left: 40px;
+
+    // Типографика
+    font-size: 15px;
+    line-height: 30px;
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-bottom: 51.5px;
+    padding-left: 0;
+
+    // Типографика
+
+    // Оформление
+  }
+}
+
+.production-process__button {
+  // Позиционирование
+
+  // Блочная модель
+  display: block;
+  margin: 0 auto;
+
+  // Типографика
+  line-height: 16px;
+
+  // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 0 42px;
+
+    // Типографика
+    font-size: 17px;
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-left: 0;
+    margin-right: 57px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
