@@ -1,7 +1,37 @@
 .main-footer {
+  // Блочная модель (внутреняя геометрия)
+  display: grid;
+  justify-items: center;
+  padding-top: 25px;
+  padding-bottom: 32px;
+
   // Типографика
 
   // Оформление
+  background-color: $grey-color;
+
+  @media ($tablet) {
+    // Блочная модель (внутреняя геометрия)
+    grid-template-columns: min-content 1fr min-content;
+    // column-gap: 122px;
+    row-gap: 30px;
+    padding-top: 51px;
+    padding-bottom: 58px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Блочная модель (внутреняя геометрия)
+    // column-gap: 312px;
+    row-gap: 50px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .main-footer__logo {
@@ -14,7 +44,7 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
@@ -31,17 +61,18 @@
 
   // Блочная модель
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, min-content);
   column-gap: 29px;
   list-style-type: none;
-  margin: 0 0 58px;
+  margin-top: 0;
+  margin-bottom: 58px;
   padding: 0;
 
   // Типографика
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель

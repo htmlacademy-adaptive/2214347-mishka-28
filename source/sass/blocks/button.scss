@@ -3,10 +3,9 @@
 
   // Блочная модель
   box-sizing: border-box;
-  display: inline-block;
-  padding: 16px 0;
+  display: block;
+  padding: 16px 21px;
   text-align: center;
-  min-width: 260px;
 
   // Типографика
   font-size: 18px;
@@ -24,18 +23,8 @@
     // Позиционирование
 
     // Блочная модель
-    padding: 18px 0;
-
-    // Типографика
-
-    // Оформление
-  }
-
-  &--narrow {
-    // Позиционирование
-
-    // Блочная модель
-    min-width: 192px;
+    padding-top: 18px;
+    padding-bottom: 18px;
 
     // Типографика
 

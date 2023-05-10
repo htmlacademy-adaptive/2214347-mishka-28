@@ -1,38 +1,29 @@
 .feedback {
-  // Типографика
-
-  // Оформление
-}
-
-.feedback__wrapper {
-  // Позиционирование
-
-  // Блочная модель
-  margin: 0 30px 45px;
+  // Блочная модель (внутренняя геометрия)
+  display: grid;
+  padding-bottom: 51px;
 
   // Типографика
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
-    // Позиционирование
-
-    // Блочная модель
+  @media ($tablet) {
+    // Блочная модель (внутренняя геометрия)
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    margin: 0 50px 68px;
+    grid-template-columns: 350px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    column-gap: 145px;
+    padding-bottom: 85px;
 
     // Типографика
 
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
-    // Позиционирование
-
-    // Блочная модель
-    margin: 0 50px 68px 175px;
+  @media ($desktop) {
+    // Блочная модель (внутренняя геометрия)
+    padding-bottom: 90px;
+    column-gap: 525px;
 
     // Типографика
 
@@ -44,11 +35,32 @@
   // Позиционирование
 
   // Блочная модель
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 14px;
 
   // Типографика
 
   // Оформление
+
+  @media ($tablet) {
+    // Блочная модель
+    margin-top: 82.5px;
+    margin-bottom: 0;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Блочная модель
+    margin-top: 78px;
+    margin-left: 175px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .feedback__list {
@@ -60,12 +72,21 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
-    // Позиционирование
-
+  @media ($tablet) {
     // Блочная модель
-    grid-column: 1/3;
-    grid-row: 2/4;
+    margin-top: 27px;
+
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Блочная модель
+    margin-top: 20px;
+    margin-left: 175px;
+
 
     // Типографика
 
@@ -77,26 +98,16 @@
   // Позиционирование
 
   // Блочная модель
-  display: grid;
-  grid-template-columns: 130px 130px;
-  row-gap: 38px;
-  justify-content: center;
-  margin: 30px 0 0;
+  margin: 0;
 
   // Типографика
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
-    // Позиционирование
-
+  @media ($tablet) {
     // Блочная модель
-    grid-template-columns: 87.5px 87.5px;
     grid-row: 1/-1;
     grid-column: 2/3;
-    column-gap: 37px;
-    margin: 0;
-    justify-items: center;
 
     // Типографика
 

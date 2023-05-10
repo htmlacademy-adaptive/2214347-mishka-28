@@ -1,27 +1,22 @@
 .catalog-products {
-  // Типографика
-
-  // Оформление
-}
-
-.catalog-products__wrapper {
-  // Позиционирование
-
-  // Блочная модель
-  margin: 0 30px;
-
-  // Типографика
+  // Блочная модель (внутренняя геометрия)
+  padding-top: 30px;
+  padding-bottom: 30px;
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
-    // Позиционирование
+  @media ($tablet) {
+    // Блочная модель (внутренняя геометрия)
+    padding-top: 67px;
+    padding-bottom: 53px;
 
-    // Блочная модель
-    margin: 0 50px;
-    margin-bottom: 54px;
+    // Оформление
+  }
 
-    // Типографика
+  @media ($desktop) {
+    // Блочная модель (внутренняя геометрия)
+    padding-top: 111px;
+    padding-bottom: 57px;
 
     // Оформление
   }
@@ -41,7 +36,7 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
@@ -52,11 +47,11 @@
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель
-    grid-template-columns: repeat(3, 316px);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 52px;
 
     // Типографика
@@ -75,11 +70,11 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
-    grid-template-columns: 334px 300px;
+    grid-template-columns: 334px 1fr;
     column-gap: 34px;
 
     // Типографика
@@ -87,7 +82,7 @@
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель
@@ -114,6 +109,7 @@
   // Позиционирование
 
   // Блочная модель
+  display: block;
 
   // Типографика
 
@@ -121,54 +117,6 @@
 }
 
 .catalog-products__text {
-  // Позиционирование
-
-  // Блочная модель
-
-  // Типографика
-
-  // Оформление
-}
-
-.catalog-products__text-title {
-  // Позиционирование
-
-  // Блочная модель
-
-  // Типографика
-  font-size: 17px;
-  line-height: 24px;
-  font-weight: 700;
-  color: $black-color;
-
-  // Оформление
-}
-
-.catalog-products__text-properties {
-  // Позиционирование
-
-  // Блочная модель
-
-  // Типографика
-  font-size: 13px;
-
-  // Оформление
-}
-
-.catalog-products__text-price {
-  // Позиционирование
-
-  // Блочная модель
-
-  // Типографика
-  line-height: 24px;
-  font-weight: 700;
-  color: $black-color;
-
-  // Оформление
-}
-
-.catalog-products__button {
   // Позиционирование
 
   // Блочная модель

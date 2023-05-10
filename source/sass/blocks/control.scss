@@ -1,17 +1,201 @@
 .control {
+  // Блочная модель (внутренняя геометрия)
+  display: grid;
+
   // Типографика
 
   // Оформление
+
+  &--radio {
+    // Блочная модель (внутренняя геометрия)
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    column-gap: 19px;
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Блочная модель (внутренняя геометрия)
+      column-gap: 28px;
+
+      // Типографика
+
+      // Оформление
+    }
+
+    @media ($desktop) {
+      // Блочная модель (внутренняя геометрия)
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+
+  &--checkbox {
+    // Блочная модель (внутренняя геометрия)
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+    column-gap: 23px;
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Блочная модель (внутренняя геометрия)
+      column-gap: 30px;
+
+      // Типографика
+
+      // Оформление
+    }
+
+    @media ($desktop) {
+      // Блочная модель (внутренняя геометрия)
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+
+  &--different {
+    // Блочная модель (внутренняя геометрия)
+    row-gap: 22px;
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Блочная модель (внутренняя геометрия)
+      grid-template-columns: 169px 1fr;
+
+      // Типографика
+
+      // Оформление
+    }
+
+    @media ($desktop) {
+      // Блочная модель (внутренняя геометрия)
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+
+  &--additional {
+    // Блочная модель (внутренняя геометрия)
+    display: flex;
+    align-items: center;
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Блочная модель (внутренняя геометрия)
+
+      // Типографика
+
+      // Оформление
+    }
+
+    @media ($desktop) {
+      // Блочная модель (внутренняя геометрия)
+
+      // Типографика
+
+      // Оформление
+    }
+  }
 }
 
 .control__toggle {
   // Позиционирование
+  position: relative;
 
   // Блочная модель
+  margin: 0;
+  width: 38px;
+  height: 38px;
 
   // Типографика
+  color: inherit; /* Chrome */
 
   // Оформление
+  background-color: $white-color;
+  border: 2px solid #444444;
+  cursor: pointer;
+  appearance: none;
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    width: 52px;
+    height: 52px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  &--radio {
+    // Позиционирование
+
+    // Блочная модель
+    width: 42px;
+    height: 42px;
+
+    // Типографика
+
+    // Оформление
+    border-radius: 50px;
+
+    @media ($tablet) {
+      // Позиционирование
+
+      // Блочная модель
+      width: 52px;
+      height: 52px;
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+
+  &::before {
+    // Позиционирование
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    // Блочная модель
+    content: "";
+
+    // Типографика
+
+    // Оформление
+    background-color: inherit;
+    border-radius: inherit;
+    // opacity: 0;
+    background-image: url("../img/tick.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+  }
+}
+
+.control__toggle[type="radio"]::before {
+  // Оформление
+  background-image: url("../img/pin.svg");
 }
 
 .control__label {
@@ -26,4 +210,115 @@
   color: $black-color;
 
   // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+    font-size: 19px;
+
+    // Оформление
+  }
+
+  &--additional {
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Позиционирование
+
+      // Блочная модель
+      padding-right: 24px;
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+}
+
+.control__field {
+  // Позиционирование
+
+  // Блочная модель
+  padding: 18px 0;
+
+  // Типографика
+
+  // Оформление
+  border: none;
+  box-shadow: inset 0 -2px 0 $black-color;
+  background-color: inherit;
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    padding-left: 18px;
+    padding-right: 18px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  &--wishlist {
+    // Позиционирование
+
+    // Блочная модель
+    padding-left: 13px;
+    padding-right: 13px;
+
+    // Типографика
+
+    // Оформление
+    border: 2px solid currentColor;
+  }
+
+  &--additional {
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Позиционирование
+
+      // Блочная модель
+      flex-grow: 1;
+      padding-left: 18px;
+      padding-right: 18px;
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+
+  &::placeholder {
+    // Типографика
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: 400;
+    color: $black-color;
+
+    // Оформление
+    opacity: 0.3;
+
+    @media ($tablet) {
+      // Типографика
+      font-size: 19px;
+    }
+  }
 }

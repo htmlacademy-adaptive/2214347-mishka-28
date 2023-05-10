@@ -1,30 +1,11 @@
 .product-range {
-  // Типографика
-
-  // Оформление
-}
-
-.product-range__wrapper {
-  // Позиционирование
-
-  // Блочная модель
+  // Блочная модель (внутреняя геометрия)
   display: grid;
-  padding: 0 30px;
 
   // Типографика
 
   // Оформление
   background-color: $green-color;
-
-  @media (min-width: $tablet-width) {
-    // Позиционирование
-
-    // Блочная модель
-
-    // Типографика
-
-    // Оформление
-  }
 }
 
 .product-range__list {
@@ -40,11 +21,10 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
-    display: grid;
     grid-template-columns: 334px 334px;
 
     // Типографика
@@ -52,11 +32,10 @@
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель
-    display: grid;
     grid-template-columns: 525px 525px;
 
     // Типографика
@@ -94,7 +73,7 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель

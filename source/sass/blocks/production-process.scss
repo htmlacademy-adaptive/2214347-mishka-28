@@ -1,42 +1,28 @@
 .production-process {
-  // Типографика
-
-  // Оформление
-}
-
-.production-process__wrapper {
-  // Позиционирование
-
-  // Блочная модель
+  // Блочная модель (внутренняя геометрия)
   display: grid;
-  justify-items: center;
-  margin: 0 30px;
-  padding: 21.5px 0 33px;
-
-  // Типографика
+  padding-top: 21.5px;
+  padding-bottom: 33px;
+  margin-bottom: 58px;
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
-    // Позиционирование
-
-    // Блочная модель
-    margin: 0 50px;
-
-    // Типографика
+  @media ($tablet) {
+    // Блочная модель (внутренняя геометрия)
+    padding-top: 0;
+    padding-bottom: 46px;
+    margin-bottom: 64px;
 
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
-    // Позиционирование
-
-    // Блочная модель
-    grid-template-columns: 1fr 287px;
-    grid-template-rows: 1fr 1fr 1fr;
+  @media ($desktop) {
+    // Блочная модель (внутренняя геометрия)
+    grid-template-columns: 683px 1fr;
+    grid-template-rows: repeat(3, min-content);
     column-gap: 80px;
-
-    // Типографика
+    padding-bottom: 0;
+    margin-bottom: 105px;
 
     // Оформление
   }
@@ -46,7 +32,8 @@
   // Позиционирование
 
   // Блочная модель
-  margin: 0 0 26.5px;
+  margin-top: 0;
+  margin-bottom: 26.5px;
   padding-left: 91px;
 
   // Типографика
@@ -57,37 +44,30 @@
 
   // Оформление
 
-  &--videocamera {
-    // Позиционирование
-
-    // Блочная модель
-
-    // Типографика
-
-    // Оформление
-  }
-
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
     grid-row: 2/3;
-    margin-bottom: 24.5px;
     justify-self: left;
+    margin-bottom: 24.5px;
     padding-left: 107px;
 
     // Типографика
+    font-size: 20px;
 
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель
     grid-row: 1/2;
-    padding: 96px 0 0;
-    margin: 0;
+    margin-bottom: 27.5px;
+    padding-top: 97px;
+    padding-left: 0;
+    padding-right: 50px;
 
     // Типографика
 
@@ -105,7 +85,7 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
@@ -116,12 +96,13 @@
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель
     grid-row: 1/-1;
     grid-column: 1/2;
+    margin-right: 79px;
 
     // Типографика
 
@@ -133,7 +114,9 @@
   // Позиционирование
 
   // Блочная модель
-  margin: 0 0 41px;
+  margin-top: 0;
+  margin-bottom: 41px;
+  padding-left: 34px;
 
   // Типографика
   font-size: 13px;
@@ -141,7 +124,7 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
@@ -149,16 +132,18 @@
     padding-left: 40px;
 
     // Типографика
+    font-size: 15px;
+    line-height: 30px;
 
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель
-    padding: 27.5px 0 51.5px;
-    margin: 0;
+    margin-bottom: 51.5px;
+    padding-left: 0;
 
     // Типографика
 
@@ -171,8 +156,34 @@
 
   // Блочная модель
   display: block;
+  margin: 0 auto;
 
   // Типографика
+  line-height: 16px;
 
   // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    margin: 0 42px;
+
+    // Типографика
+    font-size: 17px;
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-left: 0;
+    margin-right: 57px;
+
+    // Типографика
+
+    // Оформление
+  }
 }

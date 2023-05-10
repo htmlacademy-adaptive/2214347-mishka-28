@@ -1,5 +1,6 @@
 .form-filters {
-  // Типографика
+  // Блочная модель (внутренняя геометрия)
+  display: grid;
 
   // Оформление
 }
@@ -8,35 +9,69 @@
   // Позиционирование
 
   // Блочная модель
+  display: grid;
   margin: 0;
-  padding: 0;
+  padding-top: 0;
+  padding-bottom: 30px;
 
   // Типографика
 
   // Оформление
   border: none;
 
-  @media (min-width: $tablet-width) {
+  &:last-of-type {
+    padding-bottom: 12px;
+  }
+
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
     display: grid;
+
+    &:not(.form-filters__group--special) {
+      grid-template-columns: 169px 1fr;
+    }
+    padding-bottom: 50px;
+
+    &:last-of-type {
+      padding-bottom: 50px;
+    }
+
+    &:not(:first-child) {
+      padding-top: 50px;
+    }
 
     // Типографика
 
     // Оформление
   }
 
-  &--view {
+  &--additional {
     // Позиционирование
 
     // Блочная модель
+    padding-bottom: 38px;
 
     // Типографика
 
     // Оформление
 
-    @media (min-width: $tablet-width) {
+    @media ($tablet) {
+      // Позиционирование
+
+      // Блочная модель
+      padding-bottom: 50px;
+
+      // Типографика
+
+      // Оформление
+      background-color: $grey-color;
+    }
+  }
+
+  &--view {
+    @media ($tablet) {
       // Позиционирование
 
       // Блочная модель
@@ -49,24 +84,22 @@
   }
 }
 
-.form-filters__title {
+.form-filters__legend {
   // Позиционирование
 
   // Блочная модель
+  padding: 0;
+  float: left;
 
   // Типографика
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: $green-color;
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
-    padding: 0;
+    margin-top: 18px;
 
     // Типографика
 
@@ -78,18 +111,23 @@
   // Позиционирование
 
   // Блочная модель
-  list-style-type: none;
+  display: grid;
+  row-gap: 10px;
   padding: 0;
+  padding-top: 30px;
   margin: 0;
 
   // Типографика
 
   // Оформление
+  list-style-type: none;
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
+    row-gap: 24px;
+    padding-top: 0;
 
     // Типографика
 
@@ -100,17 +138,62 @@
     // Позиционирование
 
     // Блочная модель
+    row-gap: 23px;
 
     // Типографика
 
     // Оформление
 
-    @media (min-width: $tablet-width) {
+    @media ($tablet) {
       // Позиционирование
 
       // Блочная модель
-      display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 20px;
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+
+  &--secondary {
+    // Позиционирование
+
+    // Блочная модель
+    padding-top: 0;
+    row-gap: 40px;
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Позиционирование
+
+      // Блочная модель
+      row-gap: 25px;
+
+      // Типографика
+
+      // Оформление
+    }
+  }
+
+  &--different {
+    // Позиционирование
+
+    // Блочная модель
+    row-gap: 23px;
+
+    // Типографика
+
+    // Оформление
+
+    @media ($tablet) {
+      // Позиционирование
+
+      // Блочная модель
 
       // Типографика
 
@@ -129,22 +212,64 @@
   // Оформление
 }
 
+.form-filters__wrapper {
+  // Позиционирование
+
+  // Блочная модель
+  display: grid;
+  row-gap: 30px;
+
+  // Типографика
+
+  // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-template-columns: 230px 1fr;
+    align-items: center;
+    column-gap: 30px;
+
+    // Типографика
+
+    // Оформление
+  }
+}
+
 .form-filters__explanation {
   // Позиционирование
 
   // Блочная модель
+  margin-top: 0;
+  margin-bottom: 0;
 
   // Типографика
   font-size: 14px;
   line-height: 16px;
 
   // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-left: auto;
+    grid-column: 2/3;
+
+    // Типографика
+    font-size: 17px;
+    line-height: 30px;
+
+    // Оформление
+  }
 }
 
 .form-filters__button {
   // Позиционирование
 
   // Блочная модель
+  padding: 16px;
 
   // Типографика
   font-size: 17px;
@@ -153,4 +278,15 @@
   color: $base-color;
 
   // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    grid-row-start: 1;
+
+    // Типографика
+
+    // Оформление
+  }
 }

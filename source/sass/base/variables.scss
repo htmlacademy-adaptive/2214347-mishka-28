@@ -3,8 +3,16 @@ $base-color: #444444;
 $black-color: #000000;
 $white-color: #ffffff;
 $green-color: #63d1bb;
+$secondary-green:#62d1ba;
+$darker-green: #59d5bc;
+$dark-green: #56c3b2;
+$darkest-green:#46c1ae;
+
 $grey-color: #f1f1f1;
+$lighter-grey:#c6c6c6;
 
 // Размеры вьюпорта
-$tablet-width: 768px;
-$desktop-width: 1150px;
+$mobile: "max-width: calc(768px - 1px)";
+$tablet: "min-width: 768px";
+$desktop: "min-width: 1150px";
+$max-desktop: "max-width: calc(1150px - 1px)";

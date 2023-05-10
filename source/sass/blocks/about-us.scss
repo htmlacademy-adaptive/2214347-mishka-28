@@ -1,36 +1,26 @@
 .about-us {
-  // Типографика
-
-  // Оформление
-}
-
-.about-us__wrapper {
-  // Позиционирование
-
-  // Блочная модель
+  // Блочная модель (внутреняя геометрия)
   display: grid;
-  margin: 0 30px 58px;
-
+  padding-top: 31px;
+  padding-bottom: 58px;
   // Типографика
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
-    // Позиционирование
-
-    // Блочная модель
-    margin: 0 50px 83px;
+  @media ($tablet) {
+    // Блочная модель (внутреняя геометрия)
+    padding-top: 55.5px;
+    padding-bottom: 83px;
 
     // Типографика
 
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
-    // Позиционирование
-
-    // Блочная модель
-    margin: 0 50px 90px 175px;
+  @media ($desktop) {
+    // Блочная модель (внутреняя геометрия)
+    padding-top: 68px;
+    padding-bottom: 90px;
 
     // Типографика
 
@@ -42,11 +32,31 @@
   // Позиционирование
 
   // Блочная модель
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 28px;
 
   // Типографика
 
   // Оформление
+
+  @media ($tablet) {
+    // Блочная модель
+    margin-bottom: 41.5px;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Блочная модель
+    margin-bottom: 39px;
+    margin-left: 175px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
 
 .about-us__list {
@@ -56,34 +66,33 @@
   display: grid;
   row-gap: 83px;
   list-style-type: none;
-  margin: 83px 0 0;
+  margin: 54px 0 0;
   padding: 0;
 
   // Типографика
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, max-content);
     row-gap: 110px;
     column-gap: 100px;
-    margin: 97.5px 0 0;
+    margin-top: 56px;
 
     // Типографика
 
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель
-    margin: 95px 0 0;
-    column-gap: 115px;
+    column-gap: 57px;
+    margin-left: 175px;
 
     // Типографика
 
@@ -105,30 +114,66 @@
   // Оформление
 
   &--ecology {
-    // иконка
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
   }
 
   &--price {
-    // иконка
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
   }
 
   &--likes {
-    // иконка
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
   }
 
   &--embroidered {
-    // иконка
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
   }
 
   &--support {
-    // иконка
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
   }
 
   &--gift-wrap {
-    // иконка
+    // Позиционирование
+
+    // Блочная модель
+
+    // Типографика
+
+    // Оформление
   }
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель

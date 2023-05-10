@@ -15,7 +15,7 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
@@ -26,7 +26,7 @@
     // Оформление
   }
 
-  @media (min-width: $desktop-width) {
+  @media ($desktop) {
     // Позиционирование
 
     // Блочная модель

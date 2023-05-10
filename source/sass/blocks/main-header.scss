@@ -1,41 +1,16 @@
 .main-header {
+  // Блочная модель (внутреняя геометрия)
+
   // Типографика
   color: $black-color;
 
   // Оформление
   background-color: $white-color;
-}
 
-.main-header__logo {
-  // Позиционирование
-
-  // Блочная модель
-  height: 79px;
-  margin: 0 auto;
-
-  // Типографика
-
-  // Оформление
-
-  @media (min-width: $tablet-width) {
-    // Позиционирование
-    position: absolute;
-    top: 22px;
-    left: 0;
-
-    // Блочная модель
-
-    // Типографика
-
-    // Оформление
-  }
-
-  @media (min-width: $desktop-width) {
-    // Позиционирование
-    left: 450.5px;
-
-    // Блочная модель
-    width: 149px;
+  @media ($tablet) and ($max-desktop) {
+    // Блочная модель (внутреняя геометрия)
+    padding-left: calc(50% - 334px);
+    padding-right: calc(50% - 334px);
 
     // Типографика
 

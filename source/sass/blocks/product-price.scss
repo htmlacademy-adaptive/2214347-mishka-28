@@ -7,10 +7,25 @@
 
   // Оформление
 
-  @media (min-width: $tablet-width) {
+  @media ($tablet) {
     // Типографика
     font-size: 20px;
 
     // Оформление
+  }
+
+  &--additional {
+    // Типографика
+    font-size: 15px;
+    color: $black-color;
+
+    // Оформление
+
+    @media ($tablet) {
+      // Типографика
+      font-size: 17px;
+
+      // Оформление
+    }
   }
 }
