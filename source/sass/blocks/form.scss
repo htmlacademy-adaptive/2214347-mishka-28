@@ -3,27 +3,19 @@
   padding-top: 17px;
   padding-bottom: 55px;
 
-  // Оформление
-
   @media ($tablet) {
     // Блочная модель (внутренняя геометрия)
-    padding-top: 68px;
+    padding-top: 66px;
     padding-bottom: 50px;
-
-    // Оформление
   }
 
   @media ($desktop) {
     // Блочная модель (внутренняя геометрия)
-    padding-top: 98.5px;
-
-    // Оформление
+    padding-top: 115px;
   }
 }
 
 .form__description {
-  // Позиционирование
-
   // Блочная модель
   margin-top: 0;
   margin-bottom: 30px;
@@ -32,18 +24,18 @@
   font-size: 13px;
   line-height: 24px;
 
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     margin-bottom: 63px;
 
     // Типографика
     font-size: 17px;
     line-height: 30px;
+  }
 
-    // Оформление
+  @media ($desktop) {
+    // Блочная модель
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }

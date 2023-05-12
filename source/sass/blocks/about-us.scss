@@ -3,65 +3,38 @@
   display: grid;
   padding-top: 31px;
   padding-bottom: 58px;
-  // Типографика
-
-  // Оформление
 
   @media ($tablet) {
     // Блочная модель (внутреняя геометрия)
-    padding-top: 55.5px;
+    padding-top: 55px;
     padding-bottom: 83px;
-
-    // Типографика
-
-    // Оформление
   }
 
   @media ($desktop) {
     // Блочная модель (внутреняя геометрия)
     padding-top: 68px;
     padding-bottom: 90px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .about-us__title {
-  // Позиционирование
-
   // Блочная модель
   margin-top: 0;
   margin-bottom: 28px;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
     // Блочная модель
-    margin-bottom: 41.5px;
-
-    // Типографика
-
-    // Оформление
+    margin-bottom: 41px;
   }
 
   @media ($desktop) {
     // Блочная модель
     margin-bottom: 39px;
     margin-left: 175px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .about-us__list {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
   row-gap: 83px;
@@ -69,118 +42,68 @@
   margin: 54px 0 0;
   padding: 0;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     grid-template-columns: repeat(2, max-content);
     row-gap: 110px;
-    column-gap: 100px;
+    column-gap: 101px;
     margin-top: 56px;
-
-    // Типографика
-
-    // Оформление
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
-    column-gap: 57px;
+    column-gap: 116px;
     margin-left: 175px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .about-us__item {
-  // Позиционирование
-
-  // Блочная модель
-
   // Типографика
   font-size: 17px;
   line-height: 20px;
   font-weight: 700;
   color: $black-color;
 
-  // Оформление
+  @media ($tablet) {
+    // Типографика
+    font-size: 20px;
+    line-height: 22px;
+  }
 
   &--ecology {
-    // Позиционирование
-
     // Блочная модель
-
-    // Типографика
 
     // Оформление
   }
 
   &--price {
-    // Позиционирование
-
     // Блочная модель
-
-    // Типографика
+    grid-row: 2/3;
 
     // Оформление
   }
 
   &--likes {
-    // Позиционирование
-
     // Блочная модель
-
-    // Типографика
+    grid-row: 3/4;
 
     // Оформление
   }
 
   &--embroidered {
-    // Позиционирование
-
     // Блочная модель
-
-    // Типографика
 
     // Оформление
   }
 
   &--support {
-    // Позиционирование
-
     // Блочная модель
-
-    // Типографика
 
     // Оформление
   }
 
   &--gift-wrap {
-    // Позиционирование
-
     // Блочная модель
-
-    // Типографика
-
-    // Оформление
-  }
-
-  @media ($tablet) {
-    // Позиционирование
-
-    // Блочная модель
-
-    // Типографика
-    font-size: 20px;
-    line-height: 22px;
 
     // Оформление
   }

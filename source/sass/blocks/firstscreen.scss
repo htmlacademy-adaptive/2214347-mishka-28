@@ -1,4 +1,4 @@
-.wrapper {
+.firstscreen {
   // Блочная модель (внутренняя геометрия)
 
   // Типографика
@@ -7,24 +7,16 @@
 
   &--main {
     // Оформление
-    background-image: url("../img/header_background.jpg");
+    background-image: url("../img/firstscreen-background.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: 50% -206px;
     background-size: contain;
 
     @media ($tablet) {
-      // Блочная модель (внутренняя геометрия)
-
-      // Типографика
-
       // Оформление
     }
 
     @media ($desktop) {
-      // Блочная модель (внутренняя геометрия)
-
-      // Типографика
-
       // Оформление
     }
   }

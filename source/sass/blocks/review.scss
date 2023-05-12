@@ -1,81 +1,48 @@
 .review {
   // Блочная модель (внутренняя геометрия)
   display: grid;
-  // Типографика
-
-  // Оформление
 }
 
 .review__text {
-  // Позиционирование
-
   // Блочная модель
   margin-top: 0;
-  margin-bottom: 33px;
-
-  // Типографика
-
-  // Оформление
+  margin-bottom: 34px;
 
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     margin-bottom: 61px;
 
     // Типографика
-
-    // Оформление
+    font-size: 17px;
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
     margin-bottom: 44px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .review__author {
-  // Позиционирование
-
   // Блочная модель
-  margin-bottom: 30px;
+  display: grid;
+  row-gap: 6px;
+  margin-bottom: 33px;
 
   // Типографика
-
-  // Оформление
+  font-style: normal;
 
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
-    margin-bottom: 47px;
-
-    // Типографика
-
-    // Оформление
+    margin-bottom: 50px;
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
     margin-bottom: 96px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .review__author-name {
-  // Позиционирование
-
   // Блочная модель
   display: block;
 
@@ -85,17 +52,22 @@
   font-weight: 700;
   color: $black-color;
 
-  // Оформление
+  @media ($tablet) {
+    // Типографика
+    font-size: 18px;
+  }
+
+  @media ($desktop) {
+    // Типографика
+    font-size: 17px;
+  }
 }
 
 .review__author-email {
-  // Позиционирование
-
   // Блочная модель
   display: block;
 
   // Типографика
   font-size: 17px;
-
-  // Оформление
+  line-height: 24px;
 }

@@ -1,10 +1,8 @@
 .button {
-  // Позиционирование
-
   // Блочная модель
   box-sizing: border-box;
   display: block;
-  padding: 16px 21px;
+  padding: 14px 21px;
   text-align: center;
 
   // Типографика
@@ -19,15 +17,21 @@
   background-color: $white-color;
   border: 2px solid currentColor;
 
-  &--big {
-    // Позиционирование
+  @media ($tablet) {
+    // Типографика
+    font-size: 17px;
+  }
 
+  &--big {
     // Блочная модель
-    padding-top: 18px;
-    padding-bottom: 18px;
+    padding: 16px 20px;
 
     // Типографика
+    line-height: 16px;
+  }
 
-    // Оформление
+  &--constant {
+    // Типографика
+    font-size: 17px;
   }
 }

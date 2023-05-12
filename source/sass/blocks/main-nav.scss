@@ -3,6 +3,9 @@
   display: flex;
   flex-wrap: wrap;
 
+  // Проба:
+  min-width: 260px;
+
   // Типографика
 
   // Оформление
@@ -13,7 +16,7 @@
 
   // Блочная модель
   height: 79px;
-  margin: 0 auto;
+  margin-left: calc(116px - 30px);
 
   // Типографика
 
@@ -46,14 +49,15 @@
 
 .main-nav__toogle {
   // Позиционирование
-  position: absolute;
-  top: 30px;
-  right: 30px;
 
   // Блочная модель
   width: 21px;
   height: 20px;
   padding: 5px;
+
+  // Проба:
+  margin: auto;
+  margin-right: 0;
 
   // Типографика
 

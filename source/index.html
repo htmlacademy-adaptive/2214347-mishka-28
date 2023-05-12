@@ -9,8 +9,8 @@
 </head>
 
 <body class="page__body">
-  <div class="wrapper wrapper--main">
-    <header class="page__header main-header container">
+  <div class="page__firstscreen firstscreen firstscreen--main">
+    <header class="page__header main-header">
 
       <nav class="main-nav">
 
@@ -37,7 +37,7 @@
 
         <ul class="main-nav__list main-nav__list--hidden main-nav__user-list user-list">
           <li class="user-list__item">
-            <a class="user-list__link user-list__link-login nav-link" href="#!">
+            <a class="user-list__link user-list__link--search nav-link" href="#!">
               <svg class="user-list__link-image" width="18" height="18" viewBox="0 0 18 18" fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg">
                 <path opacity="0.2"
@@ -78,7 +78,11 @@
     </header>
 
     <section class="hero hero--main container">
-      <h1 class="hero__title title-section title-section--main">Милые штуки ручной работы для дома</h1>
+      <h1 class="hero__title title-section title-section--main">
+        Милые штуки
+          ручной
+        работы для дома
+      </h1>
     </section>
 
     <section class="product-range container">
@@ -94,11 +98,11 @@
     </section>
   </div>
 
-  <main class="main-container">
+  <main class="main-container page__main">
 
     <section class="popular-products container">
       <header class="popular-products__header">
-        <h2 class="popular-products__title title-section">Вязанные корзинки</h2>
+        <h2 class="popular-products__title title-section">Вязаные корзинки</h2>
         <p class="popular-products__label">Товар недели</p>
       </header>
       <p class="popular-products__description">
@@ -209,10 +213,10 @@
         </blockquote>
       </div>
       <p class="feedback__toggles toggles">
-        <button class="toggles__previous" type="button">
+        <button class="toggles__previous toggles-arrow" type="button">
           <span class="visually-hidden">Предыдущий отзыв</span>
         </button>
-        <button class="toggles__next" type="button">
+        <button class="toggles__next toggles-arrow" type="button">
           <span class="visually-hidden">Следующий отзыв</span>
         </button>
         <a class="toggles__main button" href="#!">Написать</a>
@@ -223,20 +227,24 @@
       <h2 class="contacts__title title-section">Контакты</h2>
       <address class="contacts__address">
         <dl class="contacts__list">
-          <dt class="contacts__name">
-            e-mail:
-          </dt>
-          <dd class="contacts__value">
-            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-          </dd>
-          <dt class="contacts__name">
-            адрес:
-          </dt>
-          <dd class="contacts__value">
-            г. Санкт-Петербург <br>
-            ул. Большая Конюшенная <br>
-            д. 19/8, офис 101
-          </dd>
+          <div class="contacts__item">
+            <dt class="contacts__name">
+              e-mail:
+            </dt>
+            <dd class="contacts__value">
+              <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+            </dd>
+          </div>
+          <div class="contacts__item">
+            <dt class="contacts__name">
+              адрес:
+            </dt>
+            <dd class="contacts__value">
+              г. Санкт-Петербург <br>
+              ул. Большая Конюшенная <br>
+              д. 19/8, офис 101
+            </dd>
+          </div>
         </dl>
       </address>
       <img class="contacts__map" src="img/map.jpg" width="320" height="454" alt="Карта">
@@ -247,23 +255,23 @@
   <footer class="main-footer container">
 
     <a class="main-footer__logo logo" href="index.html">
-      <img class="logo__image" src="#" width="86" height="35" alt="Логотип интернет-магазина Mishka.">
+      <img class="logo__image" src="img/logo.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka.">
     </a>
 
     <ul class="main-footer__social social">
       <li class="social__item">
         <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-          <span class="visually-hidden">Our Vkontakte.</span>
+          <span class="visually-hidden">Наш Вконтакте.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-          <span class="visually-hidden">Our YouTube.</span>
+          <span class="visually-hidden">Наш Ютуб.</span>
         </a>
       </li>
       <li class="social__item">
         <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-          <span class="visually-hidden">Our Telegram.</span>
+          <span class="visually-hidden">Наш Телеграмм.</span>
         </a>
       </li>
     </ul>

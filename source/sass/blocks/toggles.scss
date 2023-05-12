@@ -4,29 +4,17 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: 38px;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
     // Блочная модель (внутренняя геометрия)
     grid-template-columns: repeat(2, 1fr);
     column-gap: 37px;
     row-gap: 238px;
     margin: 0;
-
-    // Типографика
-
-    // Оформление
   }
 
   @media ($tablet) {
     // Блочная модель (внутренняя геометрия)
-    row-gap: 189px;
-
-    // Типографика
-
-    // Оформление
+    row-gap: 180px;
   }
 }
 
@@ -71,25 +59,13 @@
 }
 
 .toggles__main {
-  // Позиционирование
-
   // Блочная модель
   grid-column: 1/-1;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     grid-row: 1/2;
-    align-self: center;
-    margin-top: 32px;
-
-    // Типографика
-
-    // Оформление
+    align-self: flex-start;
+    margin-top: 80px;
   }
 }

@@ -4,157 +4,95 @@
   padding-top: 38px;
   padding-bottom: 39px;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     padding-top: 46px;
     padding-bottom: 57px;
-
-    // Типографика
-
-    // Оформление
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: min-content 1fr min-content;
     padding-top: 71px;
     padding-bottom: 105px;
-
-
-    grid-template-columns: min-content 1fr;
-    grid-template-rows: min-content 1fr min-content;
-    column-gap: 59px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .contacts__title {
-  // Позиционирование
-
   // Блочная модель
   margin-top: 0;
   margin-bottom: 28px;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     margin-top: 22px;
     margin-bottom: 49px;
-
-    // Типографика
-
-    // Оформление
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
     margin-top: 79px;
-    margin-bottom: 34.5px;
+    margin-bottom: 37px;
     margin-left: 175px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .contacts__address {
-  // Позиционирование
-
   // Блочная модель
   margin-top: 0;
-  margin-bottom: 62px;
+  margin-bottom: 63px;
 
   // Типографика
   font-size: 14px;
   font-style: normal;
 
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     margin-bottom: 49px;
 
     // Типографика
     font-size: 17px;
-
-    // Оформление
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
     grid-column: 1/2;
-    margin-bottom: 54px;
+    margin-bottom: 84px;
     margin-left: 175px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .contacts__list {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
-  grid-template-columns: min-content 1fr;
-  row-gap: 29px;
-  column-gap: 35px;
+  row-gap: 30px;
   margin: 0;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
-    grid-template-columns: min-content 1fr min-content 1fr;
-    column-gap: 25px;
-
-    // Типографика
-
-    // Оформление
+    grid-template-columns: repeat(2, 1fr);
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: auto;
+  }
+}
 
-    // Типографика
+.contacts__item {
+  // Блочная модель
+  display: grid;
+  grid-template-columns: min-content 2fr;
+  column-gap: 35px;
 
-    // Оформление
+  @media ($tablet) {
+    // Блочная модель
+    column-gap: 25px;
   }
 }
 
 .contacts__name {
-  // Позиционирование
-
   // Блочная модель
 
   // Типографика
@@ -163,8 +101,6 @@
 }
 
 .contacts__value {
-  // Позиционирование
-
   // Блочная модель
   margin: 0;
 
@@ -174,10 +110,6 @@
 }
 
 .contacts__link {
-  // Позиционирование
-
-  // Блочная модель
-
   // Типографика
   color: $base-color;
 
@@ -187,60 +119,35 @@
 }
 
 .contacts__map {
-  // Позиционирование
-
   // Блочная модель
   display: block;
+  max-width: 100vw;
+  margin: 0 -30px 40px;
 
-  // Типографика
-
-  // Оформление
+  @media ($tablet) {
+    // Блочная модель
+    margin: 0 -50px 57px;
+  }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
     grid-column: 2/3;
     grid-row: 1/-1;
-
-    // Типографика
-
-    // Оформление
+    margin: 0;
   }
 }
 
 .contacts__button {
-  // Позиционирование
-
-  // Блочная модель
-  margin: 42px 0 0;
-
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
-    margin-top: 55px;
     justify-self: center;
     width: 230px;
-
-    // Типографика
-
-    // Оформление
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
+    justify-self: left;
     margin-top: 0;
-    margin-left: 120px;
-
-    // Типографика
-
-    // Оформление
+    margin-left: 175px;
   }
 }
