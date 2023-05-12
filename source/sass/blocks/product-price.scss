@@ -5,13 +5,9 @@
   font-weight: 700;
   color: $base-color;
 
-  // Оформление
-
   @media ($tablet) {
     // Типографика
     font-size: 20px;
-
-    // Оформление
   }
 
   &--additional {
@@ -19,13 +15,9 @@
     font-size: 15px;
     color: $black-color;
 
-    // Оформление
-
     @media ($tablet) {
       // Типографика
       font-size: 17px;
-
-      // Оформление
     }
   }
 }

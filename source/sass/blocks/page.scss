@@ -1,24 +1,34 @@
 .page {
+  // Блочная модель
+
   // Типографика
 
   // Оформление
 }
 
 .page__body {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   min-height: 100vh;
   margin: 0 auto;
+}
 
-  // Типографика
-
-  // Оформление
+.page__firstscreen {
+  // Позиционирование
+  position: relative;
 }
 
 .page__header {
   // Позиционирование
-  position: relative;
+  position: absolute;
+
+  @media ($tablet) {
+    position: static;
+  }
+}
+
+.page__main {
+  // Блочная модель
+  max-width: 100vw;
 }

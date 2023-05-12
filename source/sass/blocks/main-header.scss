@@ -1,5 +1,7 @@
 .main-header {
   // Блочная модель (внутреняя геометрия)
+  padding-left: calc(50% - 130px);
+  padding-right: calc(50% - 130px);
 
   // Типографика
   color: $black-color;
@@ -11,9 +13,11 @@
     // Блочная модель (внутреняя геометрия)
     padding-left: calc(50% - 334px);
     padding-right: calc(50% - 334px);
+  }
 
-    // Типографика
-
-    // Оформление
+  @media ($desktop) {
+    // Блочная модель (внутреняя геометрия)
+    padding-left: calc(50% - 525px);
+    padding-right: calc(50% - 525px);
   }
 }

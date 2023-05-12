@@ -3,79 +3,65 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
-  // Оформление
-
   @media ($tablet) {
     // Блочная модель (внутренняя геометрия)
-    padding-top: 67px;
+    padding-top: 79px;
     padding-bottom: 53px;
-
-    // Оформление
   }
 
   @media ($desktop) {
     // Блочная модель (внутренняя геометрия)
-    padding-top: 111px;
-    padding-bottom: 57px;
-
-    // Оформление
+    padding-top: 128px;
+    padding-bottom: 56px;
   }
 }
 
 .catalog-products__list {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
-  row-gap: 30px;
-  list-style-type: none;
+  row-gap: 32px;
   margin: 0;
   padding: 0;
 
-  // Типографика
-
   // Оформление
+  list-style-type: none;
 
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
-    row-gap: 54px;
-
-    // Типографика
-
-    // Оформление
+    row-gap: 53px;
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 52px;
-
-    // Типографика
-
-    // Оформление
+    column-gap: 51px;
   }
 }
 
 .catalog-products__item {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
 
-  // Типографика
+  @media ($tablet) {
+    // Блочная модель
+    grid-template-columns: 334px 1fr;
+  }
 
-  // Оформление
+  @media ($desktop) {
+    // Блочная модель
+    grid-template-columns: 316px;
+    grid-template-rows: min-content 1fr;
+  }
+}
+
+.catalog-products__link {
+  // Типографика
+  text-decoration: none;
 
   @media ($tablet) {
     // Позиционирование
 
     // Блочная модель
-    grid-template-columns: 334px 1fr;
-    column-gap: 34px;
 
     // Типографика
 
@@ -86,7 +72,7 @@
     // Позиционирование
 
     // Блочная модель
-    grid-template-columns: 316px;
+    height: 462px;
 
     // Типографика
 
@@ -94,20 +80,7 @@
   }
 }
 
-.catalog-products__link {
-  // Позиционирование
-
-  // Блочная модель
-
-  // Типографика
-  text-decoration: none;
-
-  // Оформление
-}
-
 .catalog-products__image {
-  // Позиционирование
-
   // Блочная модель
   display: block;
 

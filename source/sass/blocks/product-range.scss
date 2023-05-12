@@ -2,45 +2,27 @@
   // Блочная модель (внутреняя геометрия)
   display: grid;
 
-  // Типографика
-
   // Оформление
   background-color: $green-color;
 }
 
 .product-range__list {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 
-  // Типографика
-
   // Оформление
+  list-style-type: none;
 
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     grid-template-columns: 334px 334px;
-
-    // Типографика
-
-    // Оформление
   }
 
   @media ($desktop) {
-    // Позиционирование
-
     // Блочная модель
     grid-template-columns: 525px 525px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
@@ -54,33 +36,25 @@
   // Оформление
 
   &--interior-accessories {
-    // иконка
+    // Блочная модель
+
+    // Оформление
   }
 
   &--baby-toys {
-    // иконка
+    // Блочная модель
+
+    // Оформление
   }
 }
 
 .product-range__link {
-  // Позиционирование
-
   // Блочная модель
   display: block;
   padding: 24px 0 31px;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     padding: 25px 0 34px 36px;
-
-    // Типографика
-
-    // Оформление
   }
 }

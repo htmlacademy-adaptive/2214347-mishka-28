@@ -1,38 +1,28 @@
 .form-filters {
   // Блочная модель (внутренняя геометрия)
   display: grid;
-
-  // Оформление
 }
 
 .form-filters__group {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
   margin: 0;
   padding-top: 0;
   padding-bottom: 30px;
 
-  // Типографика
+  &:last-of-type {
+    padding-bottom: 13px;
+  }
 
   // Оформление
   border: none;
 
-  &:last-of-type {
-    padding-bottom: 12px;
-  }
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
-    display: grid;
-
     &:not(.form-filters__group--special) {
       grid-template-columns: 169px 1fr;
     }
-    padding-bottom: 50px;
+    padding-bottom: 51px;
 
     &:last-of-type {
       padding-bottom: 50px;
@@ -41,29 +31,29 @@
     &:not(:first-child) {
       padding-top: 50px;
     }
+  }
 
-    // Типографика
+  @media ($desktop) {
+    // Блочная модель
+    padding-left: 111px;
 
-    // Оформление
+    &:not(.form-filters__group--special) {
+      grid-template-columns: 115px 1fr;
+    }
+
+    &:last-of-type {
+      padding-bottom: 45px;
+    }
   }
 
   &--additional {
-    // Позиционирование
-
     // Блочная модель
-    padding-bottom: 38px;
-
-    // Типографика
-
-    // Оформление
+    padding-bottom: 34px;
+    padding-top: 5px;
 
     @media ($tablet) {
-      // Позиционирование
-
       // Блочная модель
       padding-bottom: 50px;
-
-      // Типографика
 
       // Оформление
       background-color: $grey-color;
@@ -72,12 +62,6 @@
 
   &--view {
     @media ($tablet) {
-      // Позиционирование
-
-      // Блочная модель
-
-      // Типографика
-
       // Оформление
       background-color: $grey-color;
     }
@@ -85,119 +69,77 @@
 }
 
 .form-filters__legend {
-  // Позиционирование
-
   // Блочная модель
   padding: 0;
   float: left;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     margin-top: 18px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .form-filters__list {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
-  row-gap: 10px;
+  row-gap: 13px;
   padding: 0;
   padding-top: 30px;
   margin: 0;
-
-  // Типографика
 
   // Оформление
   list-style-type: none;
 
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
-    row-gap: 24px;
+    row-gap: 27px;
     padding-top: 0;
+  }
 
-    // Типографика
-
-    // Оформление
+  @media ($desktop) {
+    // Блочная модель
+    margin-right: 175px;
   }
 
   &--additional {
-    // Позиционирование
-
     // Блочная модель
     row-gap: 23px;
-
-    // Типографика
-
-    // Оформление
+    padding-top: 27px;
 
     @media ($tablet) {
-      // Позиционирование
-
       // Блочная модель
       grid-template-columns: repeat(2, 1fr);
       column-gap: 20px;
+      padding-top: 0;
+    }
 
-      // Типографика
-
-      // Оформление
+    @media ($desktop) {
+      // Блочная модель
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 25px;
+      margin-right: 110px;
     }
   }
 
   &--secondary {
-    // Позиционирование
-
     // Блочная модель
     padding-top: 0;
-    row-gap: 40px;
-
-    // Типографика
-
-    // Оформление
+    row-gap: 36px;
 
     @media ($tablet) {
-      // Позиционирование
-
       // Блочная модель
       row-gap: 25px;
-
-      // Типографика
-
-      // Оформление
     }
   }
 
   &--different {
-    // Позиционирование
-
     // Блочная модель
     row-gap: 23px;
-
-    // Типографика
-
-    // Оформление
+    padding-top: 30px;
 
     @media ($tablet) {
-      // Позиционирование
-
       // Блочная модель
-
-      // Типографика
-
-      // Оформление
+      padding-top: 0;
     }
   }
 }
@@ -213,33 +155,25 @@
 }
 
 .form-filters__wrapper {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
   row-gap: 30px;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     grid-template-columns: 230px 1fr;
     align-items: center;
     column-gap: 30px;
+  }
 
-    // Типографика
-
-    // Оформление
+  @media ($desktop) {
+    // Блочная модель
+    padding-left: 225px;
+    padding-right: 225px;
   }
 }
 
 .form-filters__explanation {
-  // Позиционирование
-
   // Блочная модель
   margin-top: 0;
   margin-bottom: 0;
@@ -248,11 +182,7 @@
   font-size: 14px;
   line-height: 16px;
 
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     margin-left: auto;
     grid-column: 2/3;
@@ -260,33 +190,12 @@
     // Типографика
     font-size: 17px;
     line-height: 30px;
-
-    // Оформление
   }
 }
 
 .form-filters__button {
-  // Позиционирование
-
-  // Блочная модель
-  padding: 16px;
-
-  // Типографика
-  font-size: 17px;
-  line-height: 16px;
-  font-weight: 700;
-  color: $base-color;
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     grid-row-start: 1;
-
-    // Типографика
-
-    // Оформление
   }
 }

@@ -2,73 +2,45 @@
   // Блочная модель (внутренняя геометрия)
   display: grid;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     padding-left: 116px;
     padding-right: 116px;
-
-    // Типографика
-
-    // Оформление
   }
 }
 
 .choose-form__group {
-  // Позиционирование
-
   // Блочная модель
   margin: 0 0 40px;
   padding: 0;
-
-  // Типографика
 
   // Оформление
   border: none;
 }
 
 .choose-form__title {
-  // Позиционирование
-
   // Блочная модель
   margin: 0 auto 35px;
 
-  // Типографика
-
-  // Оформление
-
   @media ($tablet) {
-    // Позиционирование
-
     // Блочная модель
     margin-bottom: 32px;
 
     // Типографика
     font-size: 17px;
-
-    // Оформление
   }
 }
 
 .choose-form__list {
-  // Позиционирование
-
   // Блочная модель
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 7px;
-  list-style-type: none;
   margin: 0;
   padding: 0;
 
-  // Типографика
-
   // Оформление
+  list-style-type: none;
 }
 
 .choose-form__item {
@@ -92,13 +64,10 @@
 }
 
 .choose-form__item-label {
-  // Позиционирование
-
   // Блочная модель
   max-width: 82px;
   padding-top: 18px;
   padding-bottom: 18px;
-  // padding: 18px 45px;
 
   // Типографика
   font-size: 17px;
@@ -113,8 +82,6 @@
 }
 
 .choose-form__button {
-  // Позиционирование
-
   // Блочная модель
 
   // Типографика

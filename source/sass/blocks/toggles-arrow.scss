@@ -1,0 +1,17 @@
+.toggles-arrow {
+  // Блочная модель (внутренняя геометрия)
+  display: block;
+  width: 130px;
+  height: 52px;
+
+  // Оформление
+  background-color: inherit;
+  border: 1px solid $lightest-grey;
+  cursor: pointer;
+
+  @media ($tablet) {
+    // Блочная модель
+    width: 50px;
+    height: 26px;
+  }
+}

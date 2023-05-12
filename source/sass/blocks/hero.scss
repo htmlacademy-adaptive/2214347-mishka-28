@@ -1,7 +1,7 @@
 .hero {
   // Блочная модель (внутреняя геометрия)
-  padding-top: 73px;
-  padding-bottom: 73px;
+  padding-top: 152px;
+  padding-bottom: 74px;
   // Типографика
 
   // Оформление
@@ -11,7 +11,7 @@
     // Позиционирование
 
     // Блочная модель
-    padding-top: 101px;
+    padding-top: 36px;
     padding-bottom: 75px;
 
     // Типографика
@@ -23,7 +23,7 @@
     // Позиционирование
 
     // Блочная модель
-    padding-top: 102px;
+    padding-top: 38px;
     padding-bottom: 96px;
 
     // Типографика
@@ -33,11 +33,36 @@
 
   &--main {
     // Блочная модель (внутреняя геометрия)
-    padding-bottom: 120px;
+    padding-top: 121px;
+    padding-bottom: 121px;
 
     // Типографика
 
     // Оформление
+
+    @media ($tablet) {
+      // Позиционирование
+
+      // Блочная модель
+      padding-top: 90px;
+      padding-bottom: 372px;
+
+      // Типографика
+
+      // Оформление
+    }
+
+    @media ($desktop) {
+      // Позиционирование
+
+      // Блочная модель
+      padding-top: 94px;
+      padding-bottom: 355px;
+
+      // Типографика
+
+      // Оформление
+    }
   }
 }
 
@@ -48,6 +73,30 @@
   margin: 0;
 
   // Типографика
+  white-space: pre-line;
 
   // Оформление
+
+  @media ($tablet) {
+    // Позиционирование
+
+    // Блочная модель
+    white-space: normal;
+
+    // Типографика
+
+    // Оформление
+  }
+
+  @media ($desktop) {
+    // Позиционирование
+
+    // Блочная модель
+    margin-left: 150px;
+    margin-right: 150px;
+
+    // Типографика
+
+    // Оформление
+  }
 }
